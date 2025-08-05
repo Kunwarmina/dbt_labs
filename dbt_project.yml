@@ -39,4 +39,18 @@ models:
   my_new_project:
     # Applies to all files under models/example/
     example:
+      +materialized: view
+      +transient: false
+      +query_tag: 'DBT'
+    raw:
       +materialized: table
+      +database: DBT_RAW
+      +schema: DBT_RAW_SCH
+    silver:
+      +materialized: table
+      +transient: false
+      +database: DBT_OUTPUT
+      +schema: SILVER_SCH
+
+
+    
