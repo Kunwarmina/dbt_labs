@@ -9,6 +9,7 @@ sources:
         identifier: CUSTOMER #parmanent table name
       - name: delivery
         identifier: DELIVERY_STATUS_FACT
+      - name: orders
   - name: raw_prod
     schema: PROD_SCH
     database: SNOWFLAKE_DBT_DATA
