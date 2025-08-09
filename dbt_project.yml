@@ -51,6 +51,14 @@ models:
       +transient: false
       +database: DBT_OUTPUT
       +schema: SILVER_SCH
+      incremental_append:    #model name
+       +materialized: incremental
+       +incremental_strategy: append
+      incremental_merge:  # model name
+        +materialized: incremental
+        +incremental_strategy: merge
+
+
 
 
     
