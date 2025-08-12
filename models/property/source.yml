@@ -10,6 +10,8 @@ sources:
       - name: delivery
         identifier: DELIVERY_STATUS_FACT
       - name: orders
+      - name: SUPPLY_CHAIN_ORDERS
+      - name: TELECOM_CUSTOMERS
   - name: raw_prod
     schema: PROD_SCH
     database: SNOWFLAKE_DBT_DATA
